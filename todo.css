@@ -96,3 +96,41 @@ li{
     display: flex;
     gap: 20px;
 }
+
+/* media query */
+@media (max-width:650px) {
+    .todo{
+        width: 80%;
+    }
+}
+
+@media (max-width:425px) {
+    .container{
+    padding: 210px 0px 0px 0px ;
+    }
+    .row{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: transparent;
+    }
+    input{
+        background-color: darkgrey;
+        border-radius: 20px;
+    }
+    .todo{
+        padding: 10px 10px 50px;
+    }
+    li{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    #edit,#delete{
+        padding: 8px 25px;
+    }
+}
